@@ -5,6 +5,9 @@
 
 搜索镜像
 [https://hub.docker.com/explore/](https://hub.docker.com/explore/)
+```
+docker search ubuntu
+```
 
 ```
 //搜索镜像
