@@ -9,6 +9,7 @@
 docker search ubuntu
 ```
 
+下载镜像
 ```
 //搜索镜像
 docker search ubuntu
