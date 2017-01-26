@@ -25,6 +25,7 @@ docker images
 ```
 // 查看本地已安装的机器
 docker-machine ls
-
+// 删除一台机器
+docker-machine rm default
 ```
 
