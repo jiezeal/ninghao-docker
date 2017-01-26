@@ -7,7 +7,10 @@
 >https://hub.docker.com/explore/ 
 
 ```
-docker search ubuntu		//搜索镜像
-docker images					//查看在本地已有的镜像
-docker pull ubuntu			  //下载镜像
+//搜索镜像
+docker search ubuntu
+//查看在本地已有的镜像
+docker images							
+//下载镜像
+docker pull ubuntu			 		 
 ```
