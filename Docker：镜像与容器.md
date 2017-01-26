@@ -11,19 +11,19 @@ docker search ubuntu
 
 下载镜像
 ```
-//搜索镜像
+// 搜索镜像
 docker search ubuntu
-//查看在本地已有的镜像
+// 查看在本地已有的镜像
 docker images							
-//下载镜像
+// 下载镜像
 docker pull ubuntu			
-//再查看一下本地已有镜像
+// 再查看一下本地已有镜像
 docker images
 ```
 
 ###Docker常用命令
 ```
-//查看本地已安装的机器
+// 查看本地已安装的机器
 docker-machine ls
 ```
 
