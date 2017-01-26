@@ -20,3 +20,8 @@ docker pull ubuntu
 //再查看一下本地已有镜像
 docker images
 ```
+
+查看本地已安装的机器
+```
+docker-machine ls
+```
