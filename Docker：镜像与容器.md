@@ -5,3 +5,7 @@
 
 ###搜索镜像
 >https://hub.docker.com/explore/ 
+
+```
+docker search ubuntu
+```
