@@ -17,5 +17,5 @@ docker search ubuntu
 docker images							
 //下载镜像
 docker pull ubuntu			
-//下载之后
+
 ```
