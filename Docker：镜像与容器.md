@@ -16,5 +16,6 @@ docker search ubuntu
 //查看在本地已有的镜像
 docker images							
 //下载镜像
-docker pull ubuntu			 		 
+docker pull ubuntu			
+//下载之后
 ```
