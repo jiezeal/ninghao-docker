@@ -22,6 +22,6 @@ docker images
 ```
 
 查看本地已安装的机器
-```
 docker-machine ls
-```
+
+
