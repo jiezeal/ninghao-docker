@@ -49,7 +49,7 @@ docker run --interactive --tty centos /bin/bash
 在后台运行的容器
 ```
 // 这个命令会报错（待解决）
-docker run --detach ubuntu ping www.baidu.com	
+docker run --detach centos ping www.baidu.com	
 ```
 
 
