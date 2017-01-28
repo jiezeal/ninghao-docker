@@ -67,6 +67,7 @@ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum install nodejs -y
 // 用nodejs在终端输出hello
 node -e "console.log('hello')"
+// 
 ```
 
 
