@@ -52,6 +52,8 @@ docker run --interactive --tty centos /bin/bash
 docker run --detach centos ping www.baidu.com
 // 新打开一个终端
 docker logs --follow e183ced42544 
+// 切换到原来的终端
+docker stop e183ced42544
 ```
 
 
