@@ -73,6 +73,7 @@ node -e "console.log('hello')"
 commit -m '安装nodejs' -a 'zhulinjie' 79944f6655f7 zhulinjie/nodejs-demo:latest
 // 基于这个镜像去创建一个容器
 docker run zhulinjie/nodejs-demo node -e "console.log('hello')"
+
 ```
 
 
