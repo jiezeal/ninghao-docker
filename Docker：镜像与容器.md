@@ -76,6 +76,7 @@ docker run zhulinjie/nodejs-demo node -e "console.log('hello')"
 // 删除手工创建的镜像，需要先删除基于这个镜像创建的容器
 docker ps -a -l
 docker rm 8cb93622ed06
+docker rmi zhulinjie/nodejs-demo
 ```
 
 
