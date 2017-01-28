@@ -5,27 +5,55 @@
 
 搜索镜像
 [https://hub.docker.com/explore/](https://hub.docker.com/explore/)
-```
-docker search ubuntu
-```
 
-下载镜像
+###Docker常用命令
 ```
 // 搜索镜像
 docker search ubuntu
 // 查看在本地已有的镜像
 docker images							
 // 下载镜像
-docker pull ubuntu			
-// 再查看一下本地已有镜像
-docker images
-```
-
-###Docker常用命令
-```
+docker pull ubuntu	
 // 查看本地已安装的机器
 docker-machine ls
 // 删除一台机器
 docker-machine rm default
+// 创建容器 （系统会给这个容器分配一个默认的名字）
+docker run ubuntu /bin/echo 'hello'
+// 查看正在运行的容器
+docker ps
+// 查看所有容器
+docker ps --all
+// 可以基于一个镜像创建多个容器
+docker run ubuntu ls
+// 查看所有容器（简写）
+docker ps -a
+// 删除容器
+docker rm 4507ade88ba8
+// 也可以在创建容器的时候给容器取一个名字
+docker run --name greeting ubuntu /bin/echo 'hello'
+// 查看最近一次创建的容器
+docker ps --all --latest
+// 停止容器
+docker stop greeting
+// 重启窗口
+docker restart greeting
+// 启动容器
+docker start greeting
+// 查看容器日志
+docker logs greeting
+// 创建一个带互动的容器
+docker run --interactive --tty ubuntu /bin/bash
 ```
+
+在后台运行的容器
+```
+// 这个命令会报错（待解决）
+docker run --detach ubuntu ping www.baidu.com	
+```
+
+
+
+
+
 
