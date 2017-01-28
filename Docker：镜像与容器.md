@@ -67,7 +67,10 @@ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 yum install nodejs -y
 // 用nodejs在终端输出hello
 node -e "console.log('hello')"
-// 
+// 下面我们可以基于这个容器创建一个镜像，其实就是去提交一下对这个容器的修改就行了
+// 先复制一个这个容器的主机名，因为它是这个容器的ID号，输入exit退出一下
+// 提交修改
+commit -m '安装nodejs' -a 'zhulinjie' 79944f6655f7 zhulinjie/nodejs-demo:latest
 ```
 
 
