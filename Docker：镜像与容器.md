@@ -58,6 +58,12 @@ docker stop e183ced42544
 ```
 
 手工创建镜像
+```
+// 先创建一个容器
+docker run -i -t centos bash
+// 再添加一个nodejs的安装源
+curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+```
 
 
 
