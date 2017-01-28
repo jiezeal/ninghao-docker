@@ -54,6 +54,7 @@ docker run --detach centos ping www.baidu.com
 docker logs --follow e183ced42544
 // 切换到原来的终端
 docker stop e183ced42544
+// 再切换到新打开的终端就会发现日志已经停止打印
 ```
 
 
