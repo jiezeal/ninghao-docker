@@ -72,7 +72,7 @@ node -e "console.log('hello')"
 // 提交修改 -m 指定提交日志(中间不能有空格) -a 指定作者 
 commit -m '安装nodejs' -a 'zhulinjie' 79944f6655f7 zhulinjie/nodejs-demo:latest
 // 基于这个镜像去创建一个容器
-
+docker run zhulinjie/nodejs-demo node -e "console.log('hello')"
 ```
 
 
