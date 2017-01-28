@@ -63,6 +63,7 @@ docker stop e183ced42544
 docker run -i -t centos bash
 // 再添加一个nodejs的安装源
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+
 ```
 
 
