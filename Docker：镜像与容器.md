@@ -80,10 +80,12 @@ docker rmi zhulinjie/nodejs-demo
 ```
 
 Dockerfile创建镜像
+```
 cd Desktop
 mkdir nodejs-demo
 cd nodejs-demo
 vi Dockerfile
+```
 ```
 FROM centos
 MAINTAINER zhulinjie <zhulinjie@126.com>
