@@ -25,7 +25,7 @@ docker ps
 // 查看所有容器
 docker ps --all
 // 可以基于一个镜像创建多个容器
-docker run ubuntu ls
+docker run centos ls
 // 查看所有容器（简写）
 docker ps -a
 // 删除容器
