@@ -48,7 +48,9 @@ docker run --interactive --tty centos /bin/bash
 
 在后台运行的容器
 ```
+// 创建一个在后台运行的容器
 docker run --detach centos ping www.baidu.com	
+// 
 ```
 
 
