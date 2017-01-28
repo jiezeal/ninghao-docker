@@ -43,7 +43,7 @@ docker start greeting
 // 查看容器日志
 docker logs greeting
 // 创建一个带互动的容器
-docker run --interactive --tty ubuntu /bin/bash
+docker run --interactive --tty centos /bin/bash
 ```
 
 在后台运行的容器
