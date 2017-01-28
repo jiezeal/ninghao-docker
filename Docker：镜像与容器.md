@@ -31,7 +31,7 @@ docker ps -a
 // 删除容器
 docker rm 4507ade88ba8
 // 也可以在创建容器的时候给容器取一个名字
-docker run --name greeting ubuntu /bin/echo 'hello'
+docker run --name greeting centos /bin/echo 'hello'
 // 查看最近一次创建的容器
 docker ps --all --latest
 // 停止容器
