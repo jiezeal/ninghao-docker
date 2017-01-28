@@ -78,6 +78,7 @@ docker ps -a -l
 docker rm 8cb93622ed06
 docker rmi zhulinjie/nodejs-demo
 // 再查看一下本地已有的镜像
+docker images
 ```
 
 
