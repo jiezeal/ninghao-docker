@@ -19,7 +19,7 @@ docker-machine ls
 // 删除一台机器
 docker-machine rm default
 // 创建容器 （系统会给这个容器分配一个默认的名字）
-docker run ubuntu /bin/echo 'hello'
+docker run centos /bin/echo 'hello'
 // 查看正在运行的容器
 docker ps
 // 查看所有容器
