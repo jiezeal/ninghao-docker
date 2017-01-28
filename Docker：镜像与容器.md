@@ -13,7 +13,7 @@ docker search centos
 // 查看在本地已有的镜像
 docker images							
 // 下载镜像
-docker pull centos	
+docker pull centos
 // 查看本地已安装的机器
 docker-machine ls
 // 删除一台机器
