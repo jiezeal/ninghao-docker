@@ -92,7 +92,9 @@ MAINTAINER zhulinjie <zhulinjie@126.com>
 RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 RUN yum install nodejs -y
 ```
-
+```
+docker build --tag zhulinjie/nodejs-demo:latest .
+```
 
 
 
