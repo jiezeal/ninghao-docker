@@ -50,7 +50,8 @@ docker run --interactive --tty centos /bin/bash
 ```
 // 创建一个在后台运行的容器
 docker run --detach centos ping www.baidu.com
-// 
+// 新打开一个终端
+docker logs --follow e183ced42544 
 ```
 
 
