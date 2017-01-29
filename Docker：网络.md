@@ -25,7 +25,7 @@ ping 172.17.0.3
 ```
 // 创建一个容器并指定none网络
 docker run -d --name web_none --net none nginx
-// 再次查看none网络的底层信息，可以看到web_none容器在使用none网络，但是并没有一个可以使用的ip地址，也就是说这个容器跟外界是一个完全隔离的状态，谁也没有办法和它通信
+// 查看none网络的底层信息，可以看到web_none容器在使用none网络，但是并没有一个可以使用的ip地址，也就是说这个容器跟外界是一个完全隔离的状态，谁也没有办法和它通信
 docker network inspect none
 ```
 ![](image/screenshot_1485704053236.png)
