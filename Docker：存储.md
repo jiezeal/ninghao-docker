@@ -11,3 +11,6 @@ echo 'hello www.baidu.com' > hello.txt
 cat hello.txt
 exit
 ```
+```
+docker run -i -t --name test1 centos bash
+```
