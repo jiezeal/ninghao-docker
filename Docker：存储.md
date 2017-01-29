@@ -31,5 +31,6 @@ cd /mnt
 touch data1
 exit
 docker rm db
+到E:\practise\data目录下，存在data1这个文件
 ```
-到E:\practise\data目录下确认是否存在data1这个文件
+
