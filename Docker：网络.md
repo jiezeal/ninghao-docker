@@ -32,5 +32,6 @@ docker network inspect none
 
 ###理解host网络
 ```
-
+// 创建一个容器并指定host网络
+docker run -d --name web_host --net host nginx
 ```
