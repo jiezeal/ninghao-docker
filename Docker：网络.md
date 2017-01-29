@@ -11,4 +11,5 @@ docker network inspect bridge
 docker run -d --name web1 --net bridge nginx
 // 再次查看bridge网络的底层信息
 docker network inspect bridge
+// 再创建一个容器web2
 ```
