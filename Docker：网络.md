@@ -17,5 +17,5 @@ docker run -d --name web2 --net bridge nginx
 docker network inspect bridge
 // 登录到web1
 docker exec -it web1 bash
-
+ping 172.17.0.3
 ```
