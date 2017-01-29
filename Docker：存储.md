@@ -27,5 +27,6 @@ docker rm test1 test2
 指定主机目录作为数据盘
 ```
 docker run -v E:\practise\data:/mnt -i -t --name=db centos bash
-
+cd /mnt
+touch data1
 ```
