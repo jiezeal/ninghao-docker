@@ -18,4 +18,5 @@ docker network inspect bridge
 // 登录到web1
 docker exec -it web1 bash
 ping 172.17.0.3
+// 可以ping通，说明web1和web2之间可以相互通信
 ```
