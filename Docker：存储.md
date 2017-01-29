@@ -67,6 +67,6 @@ docker volume inspect 187856df2edfce79bde7f36d82500d789faed20bc5bc69194d5ebee79c
 // 删除容器并删除它的数据盘
 docker rm -v db2
 // 如果容器正在运行中，上面的命令会报错，需要加-f选项来进行强制删除
-docker rm -v db2
+docker rm -vf db2
 ```
 
