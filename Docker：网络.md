@@ -37,3 +37,5 @@ docker run -d --name web_host --net host nginx
 // 查看host网络的底层信息，可以看到web_host容器在使用host网络，但是也没有一个可以使用的ip地址，因为使用host网络的容器的ip地址跟主机的网络是一样的
 docker network inspect host
 ```
+
+
