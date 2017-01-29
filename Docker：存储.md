@@ -33,4 +33,10 @@ exit
 docker rm db
 切换到E:\practise\data目录下，存在data1这个文件
 ```
+在创建容器的时候如果报如下错误：
+![](image/screenshot_1485665074831.png)
+
+解决方法：
+![](image/screenshot_1485665119744.png)
+
 
