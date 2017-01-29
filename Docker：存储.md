@@ -53,3 +53,6 @@ cd /mnt
 ls
 ```
 ![](image/screenshot_1485666083803.png)
+
+###管理数据盘
+
