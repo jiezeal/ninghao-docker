@@ -12,5 +12,5 @@ cat hello.txt
 exit
 ```
 ```
-docker run -i -t --name test1 centos bash
+docker run -i -t --name test2 centos bash
 ```
