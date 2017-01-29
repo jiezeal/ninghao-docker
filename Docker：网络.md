@@ -34,5 +34,5 @@ docker network inspect none
 ```
 // 创建一个容器并指定host网络
 docker run -d --name web_host --net host nginx
-
+// 查看host网络的底层信息，可以看到web_host容器在使用host网络，但是也没有一个可以使用的ip地址
 ```
