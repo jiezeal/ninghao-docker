@@ -4,5 +4,6 @@
 ```
 // 查看已有的网络
 docker network ls
+// 查看bridge网络的底层信息
 
 ```
