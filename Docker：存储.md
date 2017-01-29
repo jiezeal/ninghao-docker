@@ -68,6 +68,7 @@ docker volume inspect 187856df2edfce79bde7f36d82500d789faed20bc5bc69194d5ebee79c
 docker rm -v dbcenter
 // 如果容器（数据容器）正在运行中，上面的命令会报错，需要加-f选项来进行强制删除
 docker rm -vf db2
-// docker volume ls
+// 查看数据盘是否已经被删除
+docker volume ls
 ```
 
