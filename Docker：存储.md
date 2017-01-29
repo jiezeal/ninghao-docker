@@ -60,6 +60,7 @@ ls
 docker volume ls
 // 查看已经没有容器使用的数据盘
 docker volume ls -f dangling=true
-
+// 删除数据盘
+docker volume rm ab7f997e4db67f635bd725168e1c6b42754a005b3eea5c0611d9c37f9b4ef143
 ```
 
