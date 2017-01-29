@@ -15,5 +15,7 @@ docker network inspect bridge
 docker run -d --name web2 --net bridge nginx
 // 再次查看bridge网络的底层信息，可以查看到已经有两个容器使用bridge网络了，在这个网络下面的容器之间可以相互通信
 docker network inspect bridge
+// 登录到web1
+docker exec -it web1 bash
 
 ```
