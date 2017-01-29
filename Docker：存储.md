@@ -30,5 +30,6 @@ docker run -v E:\practise\data:/mnt -i -t --name=db centos bash
 cd /mnt
 touch data1
 exit
+docker rm db
 ```
 到E:\practise\data目录下确认是否存在data1这个文件
