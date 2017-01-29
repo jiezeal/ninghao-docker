@@ -62,6 +62,9 @@ docker volume ls
 docker volume ls -f dangling=true
 // 删除数据盘
 docker volume rm ab7f997e4db67f635bd725168e1c6b42754a005b3eea5c0611d9c37f9b4ef143
+// 查看数据盘的底层信息
+docker volume inspect 
 // 删除容器并删除它的数据盘
+
 ```
 
