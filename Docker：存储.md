@@ -29,4 +29,5 @@ docker rm test1 test2
 docker run -v E:\practise\data:/mnt -i -t --name=db centos bash
 cd /mnt
 touch data1
+exit
 ```
