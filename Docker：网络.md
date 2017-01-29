@@ -20,3 +20,5 @@ docker exec -it web1 bash
 ping 172.17.0.3
 // 可以ping通，说明web1和web2之间可以相互通信
 ```
+
+###理解none网络
