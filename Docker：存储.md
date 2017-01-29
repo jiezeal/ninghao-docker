@@ -31,3 +31,4 @@ cd /mnt
 touch data1
 exit
 ```
+到E:\practise\data目录下确认是否存在data1这个文件
