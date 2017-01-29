@@ -52,3 +52,4 @@ docker run --volumes-from dbcenter --name db2 -i -t centos bash
 cd /mnt
 ls
 ```
+![](image/screenshot_1485666083803.png)
