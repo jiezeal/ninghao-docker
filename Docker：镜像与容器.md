@@ -96,6 +96,3 @@ RUN yum install nodejs -y
 docker build --tag zhulinjie/nodejs-demo:latest .
 docker images
 ```
-
-
-
