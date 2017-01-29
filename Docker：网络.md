@@ -10,4 +10,5 @@ docker network inspect bridge
 // 如果本机没有nginx镜像，系统会自动从网络上下载
 docker run -d --name web1 --net bridge nginx
 // 查看bridge网络的底层信息
+docker network inspect bridge
 ```
