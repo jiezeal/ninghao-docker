@@ -24,4 +24,5 @@ ping 172.17.0.3
 ###理解none网络
 ```
 // 创建一个容器并指定none网络
+docker run -d --name web_none --net none nginx
 ```
