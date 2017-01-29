@@ -60,5 +60,6 @@ ls
 docker volume ls
 // 查看已经没有容器使用的数据盘
 docker volume ls -f dangling=true
+
 ```
 
