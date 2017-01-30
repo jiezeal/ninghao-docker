@@ -68,3 +68,29 @@ ping phoenix
 ```
 
 ###定义网络
+```
+version: '2'
+services:
+  phoenix:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - "fairyland"
+  dragon:
+    image: nginx
+    ports:
+      - "8081:80"
+    networks:
+      - "fairyland"
+  monkey:
+    image: nginx
+    ports:
+      - "8082:80"
+    networks:
+      - "default"
+networks:
+  fairyland:
+    driver: bridge
+
+```
