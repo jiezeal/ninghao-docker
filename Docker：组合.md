@@ -47,4 +47,5 @@ docker-compose exec phoenix bash
 // 要删除应用的服务需要先把它们都停止掉
 docker-compose stop
 // 删除所有服务的容器
+docker-compose rm 
 ```
