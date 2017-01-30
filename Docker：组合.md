@@ -30,6 +30,6 @@ docker ps
 ```
 // 查看应用的服务
 docker-compose ps
-// 停止服务
-
+// 停止phoenix服务
+docker-compose stop phoenix
 ```
