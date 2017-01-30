@@ -41,5 +41,5 @@ docker-compose start
 // 查看服务的日志
 docker-compose logs
 // 持续查看服务的日志
-
+docker-compose logs -f
 ```
