@@ -40,6 +40,7 @@ docker network inspect host
 
 ###Docker Quickstart Terminal启动蓝屏
 BIOS开启虚拟化
+![](image/screenshot_1485783059483.png)
 
 ###端口
 ```
