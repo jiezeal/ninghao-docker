@@ -39,6 +39,7 @@ docker network inspect host
 ```
 
 ###Docker Quickstart Terminal启动蓝屏
+BIOS开启虚拟化
 
 ###端口
 ```
