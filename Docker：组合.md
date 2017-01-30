@@ -25,3 +25,5 @@ docker-compose up -d
 // 查看一下正在运行的容器
 docker ps
 ```
+
+###服务的生命周期
