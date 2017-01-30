@@ -37,5 +37,9 @@ docker-compose stop
 // 重新启动phoenix服务
 docker-compose start phoenix
 // 启动所有服务
-docker-compose start
+docker-compose start	
+// 查看服务的日志
+docker-compose logs
+// 持续查看服务的日志
+
 ```
