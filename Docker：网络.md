@@ -85,4 +85,7 @@ docker network inspect web
 ###把容器放到自定义网络里
 ```
 // 创建容器并指定自定义的web网络
+docker run -d --name web5 --net web nginx
+// 查看web网络 
+docker network inspect web
 ```
