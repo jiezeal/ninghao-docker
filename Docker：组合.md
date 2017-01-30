@@ -147,6 +147,6 @@ cd /mnt
 ls
 ```
 
-###指定位置的数据卷
+###指定位置的数据卷（报了一个错）
 ERROR: for dragon  Cannot create container for service dragon: invalid bind mount spec "C:\\Users\\zhuli\\Desktop\\ninghao-docker\\app\\web:/usr/share/nginx/html:rw": invalid volume specification: 'C:\Users\zhuli\Desktop\ninghao-docker\app\web:/usr/share/nginx/html:rw'
 [31mERROR[0m: Encountered errors while bringing up the project.
