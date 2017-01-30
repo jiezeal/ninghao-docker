@@ -48,4 +48,5 @@ docker inspect nginx
 docker run -d --name web3 --publish 80:80 nginx
 // 查看主机的ip地址
 docker-machine inspect default
+// 使用浏览器访问这个ip地址，显示的内容就是web3这个容器
 ```
