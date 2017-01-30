@@ -44,4 +44,5 @@ docker-compose logs
 docker-compose logs -f
 // 登录到phoenix服务容器中
 docker-compose exec phoenix bash
+// 删除服务容器需要先停止
 ```
