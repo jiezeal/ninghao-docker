@@ -57,3 +57,12 @@ docker network ls
 ```
 
 ###网络
+网络决定了服务之间还有外界跟服务之间怎么样去进行沟通，在执行docker-compose up的时候，docker会给我们创建一个默认的网络，所有的服务也会属于这个默认的网络，服务跟服务之间可以使用服务的名字进行相互的通信，我们也可以创建自己的网络，然后让指定的服务加入到我们自己创建的这些网络里面，那么这样的话属于这个网络的服务之间可以进行通信，网络以外的服务就不能够去它们进行通信了， 这样的话会对这个服务有一个隔离的作用，让应用更安全一些
+```
+docker-compose up -d
+docker-compose exec phoenix bash
+ping dragon
+exit
+docker-compose exec dragon bash
+ping phoenix
+```
