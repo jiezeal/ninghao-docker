@@ -99,4 +99,5 @@ docker-compose up -d
 docker-compose exec phoenix bash
 ping dragon
 ping monkey
+// dragon能ping通，monkey不能ping通
 ```
