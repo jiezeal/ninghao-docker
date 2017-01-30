@@ -101,3 +101,48 @@ ping dragon
 ping monkey
 // dragon能ping通，monkey不能ping通
 ```
+
+###命名的数据卷
+```
+version: '2'
+services:
+  phoenix:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - "fairyland"
+    volumes:
+      - nest:/mnt
+  dragon:
+    image: nginx
+    ports:
+      - "8081:80"
+    networks:
+      - "fairyland"
+    volumes:
+      - nest:/mnt
+  monkey:
+    image: nginx
+    ports:
+      - "8082:80"
+    networks:
+      - "default"
+networks:
+  fairyland:
+    driver: bridge
+volumes:
+  nest:
+    driver: local
+```
+```
+docker-compose up -d
+docker-compose exec phoenix bash
+cd /mnt
+touch phoenix_data_1
+ls
+exit
+docker-compose exec dragon bash
+cd /mnt
+ls
+```
