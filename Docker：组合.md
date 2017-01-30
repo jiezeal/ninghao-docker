@@ -45,5 +45,6 @@ docker-compose logs -f
 // 登录到phoenix服务容器中
 docker-compose exec phoenix bash
 // 要删除应用的服务需要先把它们都停止掉
-
+docker-compose stop
+// 删除所有服务容器
 ```
