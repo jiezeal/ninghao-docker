@@ -32,6 +32,6 @@ docker ps
 docker-compose ps
 // 停止phoenix服务
 docker-compose stop phoenix
-// 停止所有在compose文件中定义的服务
+// 停止所有在docker-compose.yml文件中定义的服务
 docker-compose stop
 ```
