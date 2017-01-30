@@ -38,6 +38,8 @@ docker run -d --name web_host --net host nginx
 docker network inspect host
 ```
 
+###
+
 ###端口
 ```
 // 如果想让外界可以访问到咱默认的birdge网络上的容器提供的服务，需要告诉docker要使用哪一些端口
