@@ -59,4 +59,6 @@ docker-machine inspect default
 ```
 // 查看容器跟主机绑定的端口
 docker inspect web3
+// 或者使用
+docker port web3
 ```
