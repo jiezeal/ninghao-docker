@@ -94,6 +94,9 @@ docker network inspect web
 // 登录到web3
 docker exec -it web3 bash
 ping web5
-ip addr
 // 通过ip addr我们可以发现web3现在属于两个网络，一个是bridge网络，一个是web网络
+ip addr
+// 将web3容器从bridge网络中删除
+docker network disconnect bridge web3
+docker network inspect bridge
 ```
