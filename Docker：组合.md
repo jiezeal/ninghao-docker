@@ -35,4 +35,7 @@ docker-compose stop phoenix
 // 停止所有在docker-compose.yml文件中定义的服务
 docker-compose stop
 // 重新启动phoenix服务
+docker-compose start phoenix
+// 启动所有服务
+docker-compose start
 ```
