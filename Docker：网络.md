@@ -70,4 +70,5 @@ docker rm -f web3
 // 重新创建一个容器，使用--publish-all 或者 -P 选项，使用它我们可以不需要去手工指定端口或者是端口的一个映射关系，它会去自动去公布在镜像里面设置的要公布的所有的端口
 docker run -d --name web3 --publish-all nginx
 docker port web3
+// 在浏览器中访问需要使用http://192.168.99.100:32770/
 ```
