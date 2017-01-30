@@ -40,6 +40,6 @@ docker-compose start phoenix
 docker-compose start	
 // 查看服务的日志
 docker-compose logs
-// 持续查看服务的日志
+// 持续跟踪服务日志的变化
 docker-compose logs -f
 ```
