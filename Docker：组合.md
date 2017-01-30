@@ -92,5 +92,11 @@ services:
 networks:
   fairyland:
     driver: bridge
-
+```
+```
+// 重新启动服务
+docker-compose up -d
+docker-compose exec phoenix bash
+ping dragon
+ping monkey
 ```
