@@ -91,4 +91,7 @@ docker network inspect web
 // 将已经存在的容器放到指定的网络里面
 docker network connect web web3
 docker network inspect web
+// 登录到web3
+docker exec -it web3 bash
+ping web5
 ```
