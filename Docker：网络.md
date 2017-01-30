@@ -63,7 +63,7 @@ docker inspect web3
 docker port web3			
 // 删除web3容器
 docker rm web3
-// 重新创建一个容器，让它的80端口指向主机的一个随机端口， 这次在浏览器访问需要用 http://192.168.99.100:32768/ 去访问
+// 重新创建一个容器，让它的80端口指向主机的一个随机端口， 这次在浏览器访问需要用 http://192.168.99.100:32768/去访问
 docker run -d --name web3 --publish 80 nginx
 // 删除web3容器
 docker rm -f web3
