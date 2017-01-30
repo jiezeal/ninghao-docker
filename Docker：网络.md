@@ -38,7 +38,7 @@ docker run -d --name web_host --net host nginx
 docker network inspect host
 ```
 
-###Docker Quickstart Terminal启动蓝屏
+###Docker Quickstart Terminal启动蓝屏解决办法
 BIOS开启虚拟化
 ![](image/screenshot_1485783059483.png)
 
