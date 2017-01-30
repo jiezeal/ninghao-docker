@@ -43,4 +43,5 @@ docker-compose logs
 // 持续跟踪服务日志的变化
 docker-compose logs -f
 // 登录到phoenix服务容器中
+docker-compose exec phoenix bash
 ```
