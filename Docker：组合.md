@@ -50,4 +50,8 @@ docker-compose stop
 docker-compose rm
 // 注意rm不会删除掉创建的网络还有数据卷
 docker network ls
+// 这里的ninghaodocker_default就是我们的应用创建一个网络
+// 如果想要删除所有的这些东西的话，可以使用
+docker-compose down
+docker network ls
 ```
