@@ -54,3 +54,5 @@ docker run -d --name web3 --publish 80:80 nginx
 docker-machine inspect default
 // 使用浏览器访问这个ip地址，显示的内容就是web3这个容器的nginx提供的服务
 ```
+
+###端口绑定
