@@ -147,7 +147,7 @@ cd /mnt
 ls
 ```
 
-###指定位置的数据卷（报了一个错，待解决）
+###指定位置的数据卷
 docker-compose.yml
 ```
 version: '2'
@@ -211,3 +211,4 @@ COMPOSE_CONVERT_WINDOWS_PATHS=1
 浏览器访问 http://192.168.99.100:8080/ 和 http://192.168.99.100:8081/
 
 ![](image/screenshot_1485880546461.png)
+![](image/screenshot_1485880570209.png)
