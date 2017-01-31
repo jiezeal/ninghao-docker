@@ -148,8 +148,6 @@ ls
 ```
 
 ###指定位置的数据卷
-![](image/screenshot_1485880675303.png) 
-
 docker-compose.yml
 ```
 version: '2'
@@ -214,3 +212,5 @@ COMPOSE_CONVERT_WINDOWS_PATHS=1
 
 ![](image/screenshot_1485880546461.png)
 ![](image/screenshot_1485880570209.png)
+
+注意：指定位置的数据卷需要在C:\Users目录下，因为VirtualBox
