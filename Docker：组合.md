@@ -188,3 +188,7 @@ volumes:
 docker-compose up -d
 ```
 ![](image/screenshot_1485879478103.png)
+```
+// 如果报了上面的错误，需要再新建一个.env文件
+COMPOSE_CONVERT_WINDOWS_PATHS=1
+```
