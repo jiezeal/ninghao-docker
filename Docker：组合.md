@@ -183,4 +183,11 @@ volumes:
     driver: local
 
 ```
+
+![](image/screenshot_1485879858230.png)
+
+```
+docker-compose up -d
+```
+
 ![](image/screenshot_1485879478103.png)
