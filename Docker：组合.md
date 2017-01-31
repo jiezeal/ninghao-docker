@@ -183,6 +183,7 @@ volumes:
   nest:
     driver: local
 ```
+![](image/screenshot_1485879858230.png)
 
 index.html
 ```
@@ -200,11 +201,9 @@ index.html
 ![](image/screenshot_1485880327660.png)
 
 `docker-compose up -d`
-
-![](image/screenshot_1485879858230.png)
-
 ![](image/screenshot_1485879478103.png)
+
+.env
 ```
-// 如果报了上面的错误，需要再新建一个.env文件
 COMPOSE_CONVERT_WINDOWS_PATHS=1
 ```
