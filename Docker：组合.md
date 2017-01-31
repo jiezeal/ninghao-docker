@@ -184,11 +184,26 @@ volumes:
     driver: local
 ```
 
+index.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello Docker</title>
+</head>
+<body>
+	Hello Docker!
+</body>
+</html>
+```
+![](image/screenshot_1485880327660.png)
 
-![](image/screenshot_1485879858230.png)
 ```
 docker-compose up -d
 ```
+![](image/screenshot_1485879858230.png)
+
 ![](image/screenshot_1485879478103.png)
 ```
 // 如果报了上面的错误，需要再新建一个.env文件
