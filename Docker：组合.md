@@ -203,7 +203,7 @@ index.html
 `docker-compose up -d`
 ![](image/screenshot_1485879478103.png)
 
-.env
+.env 用来解决上面的报错
 ```
 COMPOSE_CONVERT_WINDOWS_PATHS=1
 ```
