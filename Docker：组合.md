@@ -148,5 +148,39 @@ ls
 ```
 
 ###指定位置的数据卷（报了一个错，待解决）
-ERROR: for dragon  Cannot create container for service dragon: invalid bind mount spec "C:\\Users\\zhuli\\Desktop\\ninghao-docker\\app\\web:/usr/share/nginx/html:rw": invalid volume specification: 'C:\Users\zhuli\Desktop\ninghao-docker\app\web:/usr/share/nginx/html:rw'
-[31mERROR[0m: Encountered errors while bringing up the project.
+```
+version: '2'
+services:
+  phoenix:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - "fairyland"
+    volumes:
+      - nest:/mnt
+      - ./app/web/:/usr/share/nginx/html
+  dragon:
+    image: nginx
+    ports:
+      - "8081:80"
+    networks:
+      - "fairyland"
+    volumes:
+      - nest:/mnt
+      - ./app/web/:/usr/share/nginx/html
+  monkey:
+    image: nginx
+    ports:
+      - "8082:80"
+    networks:
+      - "default"
+networks:
+  fairyland:
+    driver: bridge
+volumes:
+  nest:
+    driver: local
+
+```
+![](image/screenshot_1485879478103.png)
