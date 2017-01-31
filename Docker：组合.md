@@ -148,6 +148,7 @@ ls
 ```
 
 ###指定位置的数据卷（报了一个错，待解决）
+docker-compose.yml
 ```
 version: '2'
 services:
@@ -182,6 +183,7 @@ volumes:
   nest:
     driver: local
 ```
+
 
 ![](image/screenshot_1485879858230.png)
 ```
