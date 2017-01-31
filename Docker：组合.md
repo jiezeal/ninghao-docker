@@ -148,6 +148,7 @@ ls
 ```
 
 ###指定位置的数据卷
+![](image/screenshot_1485880675303.png)
 docker-compose.yml
 ```
 version: '2'
