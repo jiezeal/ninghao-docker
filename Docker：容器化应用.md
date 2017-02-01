@@ -220,5 +220,45 @@ docker-compose up -d
 通过浏览器访问：http://192.168.99.100:8080/phpinfo.php 搜索 gd pdo opcache
 
 ###创建工具包容器
+```
+version: '2'
+services:
+  console:
+    build:
+      context: ./images/console
+      dockerfile: Dockerfile
+    volumes_from:
+      - php
+    tty: true
+  web:
+    image: nginx:1.11.1
+    ports:
+      - "8080:80"
+    depends_on:
+      - php
+    volumes_from:
+      - php
+    volumes:
+      - ./images/nginx/config:/etc/nginx/conf.d
+  php:
+    build:
+      context: ./images/php
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/mnt/app
+  db:
+    image: mariadb:10.1
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "app"
+      MYSQL_USER: "app"
+      MYSQL_PASSWORD: "123123"
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
+    driver: local
+```
+
 
 
