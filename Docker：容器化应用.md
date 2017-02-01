@@ -167,6 +167,14 @@ volumes:
 
 ./images/php/Dockerfile
 ```
+FROM php:7.0-fpm
+MAINTAINER zhulinjie <zhulinjie_cool@126.com>
+
+COPY ./config/php.ini /usr/local/etc/php/conf.d
+```
+
+
+```
 // 创建服务需要的镜像
 docker-compose build
 // 重新创建需要的服务
