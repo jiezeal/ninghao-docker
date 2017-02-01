@@ -40,7 +40,7 @@ docker rm db
 ![](image/screenshot_1485665119744.png)
 
 ###数据容器
-我们可以去创建一个数据容器，也就是在创建这个容器的时候去给它指定一个数据盘，然后让其它的容器可以去使用这个数据容器来作为它们的数据盘
+我们可以去创建一个数据容器，然后让其它的容器可以去使用这个数据容器来作为它们的数据盘
 ```
 docker create -v /mnt --name dbcenter centos
 docker run --volumes-from dbcenter --name db1 -i -t centos bash
