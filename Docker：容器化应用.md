@@ -179,9 +179,12 @@ memory_limit = 256M
 post_max_size = 100M
 upload_max_filesize = 100M
 ```
+
 ```
 // 创建服务需要的镜像
 docker-compose build
 // 重新创建需要的服务
 docker-compose up -d
 ```
+通过浏览器访问：http://192.168.99.100:8080/phpinfo.php
+
