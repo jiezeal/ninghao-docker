@@ -293,7 +293,11 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 ![](image/screenshot_1485962575074.png)
 
 ###安装运行 Laravel 项目
-
+```
+docker-compose up -d
+docker-compose exec console bash
+composer create-project --prefer-dist laravel/laravel laravel
+```
 
 
 
