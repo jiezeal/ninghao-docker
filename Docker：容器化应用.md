@@ -63,6 +63,60 @@ volumes:
 ```
 
 ###定义nginx服务
+```
+version: '2'
+services:
+  web:
+    image: nginx:1.11.1
+    ports:
+      - "8080:80"
+    depends_on:
+      - php
+    volumes_from:
+      - php
+    volumes:
+      - ./images/nginx/config:/etc/nginx/conf.d
+  php:
+    image: php:7.0-fpm
+    volumes:
+      - ./app:/mnt/app
+  db:
+    image: mariadb:10.1
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "app"
+      MYSQL_USER: "app"
+      MYSQL_PASSWORD: "123123"
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
+    driver: local
+```
+
+./images/nginx/config/default.conf
+```
+server {
+	listen				80;
+	server_name			localhost;
+	root				/mnt/app;
+	index				index.php index.html index.htm;
+
+	location / {
+		index			index.php index.html index.htm;
+		try_files		$uri $uri/ /index.php?$query_string;
+	}
+
+	location ~ \.php$ {
+		fastcgi_pass	php:9000;
+		fastcgi_index	index.php;
+		fastcgi_param	SCRIPT_FILENAME		$document_root$fastcgi_script_name;
+		include			fastcgi_params;
+	}
+}
+```
+
+
 
 
 
