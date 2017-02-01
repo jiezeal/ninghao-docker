@@ -288,3 +288,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 	&& . ~/.bashrc && composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
+`docker-compose build console`
