@@ -289,3 +289,16 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 ```
 
 `docker-compose build console`
+
+
+
+
+
+
+
+
+
+
+
+
+
