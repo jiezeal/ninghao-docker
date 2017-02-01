@@ -121,7 +121,10 @@ server {
 COMPOSE_CONVERT_WINDOWS_PATHS=1
 ```
 
-
+测试
+```
+docker-compose up -d
+```
 
 
 
