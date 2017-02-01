@@ -173,7 +173,7 @@ MAINTAINER zhulinjie <zhulinjie_cool@126.com>
 COPY ./config/php.ini /usr/local/etc/php/conf.d
 ```
 
-
+./images/php/config/php.ini
 ```
 // 创建服务需要的镜像
 docker-compose build
