@@ -31,5 +31,7 @@ exit
 docker-compose down
 docker-compose up -d
 docker-compose exec db bash
+mysql -u root -p
+show databases;
 ```
 
