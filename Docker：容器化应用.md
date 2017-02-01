@@ -298,6 +298,7 @@ docker-compose up -d
 docker-compose exec console bash
 composer create-project --prefer-dist laravel/laravel laravel
 ls
+exit
 ```
 
 ./app/laravel/.env
