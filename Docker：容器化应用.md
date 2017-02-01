@@ -57,7 +57,7 @@ volumes:
     driver: local
 ```
 
-phpinfo.php
+./app/phpinfo.php
 ```
 <?php phpinfo(); ?>
 ```
