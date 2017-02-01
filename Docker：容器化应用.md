@@ -19,5 +19,11 @@ volumes:
 ```
 
 ###测试数据库服务
-
+```
+docker-compose up -d
+docker-compose exec db bash
+mysql -u root -p
+show databases;
+create database test default charset utf8;
+```
 
