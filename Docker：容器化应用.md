@@ -189,6 +189,18 @@ docker-compose up -d
 通过浏览器访问：http://192.168.99.100:8080/phpinfo.php upload_max_filesize的值已经变为了100M
 
 ###安装PHP模块
+./images/php/Dockerfile
+```
+FROM php:7.0-fpm
+MAINTAINER zhulinjie <zhulinjie_cool@126.com>
+
+RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var/lib/apt/lists/* && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr && docker-php-ext-install gd pdo_mysql zip opcache
+
+COPY ./config/php.ini /usr/local/etc/php/conf.d
+COPY ./config/opcache-recommended.ini /usr/local/etc/php/conf.d
+```
+
+
 
 
 
