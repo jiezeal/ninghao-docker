@@ -297,6 +297,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 docker-compose up -d
 docker-compose exec console bash
 composer create-project --prefer-dist laravel/laravel laravel
+ls
 ```
 
 ./app/laravel/.env
@@ -356,7 +357,7 @@ server {
 	}
 }
 ```
-
+![](image/screenshot_1485963691384.png)
 
 
 
