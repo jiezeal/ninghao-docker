@@ -186,5 +186,5 @@ docker-compose build
 // 重新创建需要的服务
 docker-compose up -d
 ```
-通过浏览器访问：http://192.168.99.100:8080/phpinfo.php
+通过浏览器访问：http://192.168.99.100:8080/phpinfo.php upload_max_filesize的值已经变为了100M
 
