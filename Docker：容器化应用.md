@@ -210,6 +210,12 @@ opcache.fast_shutdown=1
 opcache.enable_cli=1
 ```
 
+```
+// 创建服务需要的镜像
+docker-compose build
+// 重新创建需要的服务
+docker-compose up -d
+```
 
 
 
