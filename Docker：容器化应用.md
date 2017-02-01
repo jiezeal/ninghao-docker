@@ -175,6 +175,11 @@ COPY ./config/php.ini /usr/local/etc/php/conf.d
 
 ./images/php/config/php.ini
 ```
+memory_limit = 256M
+post_max_size = 100M
+upload_max_filesize = 100M
+```
+```
 // 创建服务需要的镜像
 docker-compose build
 // 重新创建需要的服务
