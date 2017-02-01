@@ -25,5 +25,11 @@ docker-compose exec db bash
 mysql -u root -p
 show databases;
 create database test default charset utf8;
+show databases;
+exit
+exit
+docker-compose down
+docker-compose up -d
+docker-compose exec db bash
 ```
 
