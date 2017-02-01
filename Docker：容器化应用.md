@@ -267,5 +267,5 @@ MAINTAINER zhulinjie <zhulinjie_cool@126.com>
 ```
 
 ###安装配置git composer
-
+./images/console/Dockerfile
 
