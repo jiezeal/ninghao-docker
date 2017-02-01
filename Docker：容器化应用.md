@@ -292,6 +292,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 ![](image/screenshot_1485962575074.png)
 
+###安装运行 Laravel 项目
+
 
 
 
