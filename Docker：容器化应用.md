@@ -360,7 +360,10 @@ server {
 ```
 ![](image/screenshot_1485963691384.png)
 
-
+```
+// 重启web服务
+docker-compose restart web
+```
 
 
 
