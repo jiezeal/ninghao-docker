@@ -290,7 +290,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 `docker-compose build console`
 
-![](image/screenshot_1485962422647.png)
+![](image/screenshot_1485962510955.png)
 
 
 
