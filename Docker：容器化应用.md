@@ -62,7 +62,7 @@ volumes:
 <?php phpinfo(); ?>
 ```
 
-
+###定义nginx服务
 
 
 
