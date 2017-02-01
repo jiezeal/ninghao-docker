@@ -120,6 +120,7 @@ server {
 ```
 COMPOSE_CONVERT_WINDOWS_PATHS=1
 ```
+![](image/screenshot_1485923966998.png)
 
 测试
 ```
@@ -127,6 +128,8 @@ docker-compose up -d
 ```
 
 通过浏览器访问：http://192.168.99.100:8080/phpinfo.php
+![](image/screenshot_1485923916768.png)
 
+###创建自己的服务
 
 
