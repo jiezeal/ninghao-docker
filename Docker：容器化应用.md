@@ -165,6 +165,7 @@ volumes:
     driver: local
 ```
 
+./images/php/Dockerfile
 ```
 // 创建服务需要的镜像
 docker-compose build
