@@ -44,6 +44,8 @@ docker start greeting
 docker logs greeting
 // 创建一个带互动的容器
 docker run --interactive --tty centos /bin/bash
+// 登录到主机
+docker-machine ssh default
 ```
 
 ###在后台运行的容器
