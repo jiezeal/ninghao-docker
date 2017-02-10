@@ -36,7 +36,7 @@ docker run --name greeting centos /bin/echo 'hello'
 docker ps --all --latest
 // 停止容器
 docker stop greeting
-// 重启窗口
+// 重启容器
 docker restart greeting
 // 启动容器
 docker start greeting
