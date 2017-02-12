@@ -200,7 +200,9 @@ index.html
 ```
 ![](image/screenshot_1485880327660.png)
 
-`docker-compose up -d`
+```
+docker-compose up -d
+```
 ![](image/screenshot_1485879478103.png)
 
 .env 用来解决上面的报错
