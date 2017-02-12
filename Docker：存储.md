@@ -59,10 +59,10 @@ docker volume ls -f dangling=true
 docker volume rm ab7f997e4db67f635bd725168e1c6b42754a005b3eea5c0611d9c37f9b4ef143
 // 查看数据盘的底层信息
 docker volume inspect 187856df2edfce79bde7f36d82500d789faed20bc5bc69194d5ebee79c44e06c
-// 删除容器（数据容器）并删除它的数据盘
-docker rm -v dbcenter
 // 如果容器（数据容器）正在运行中，上面的命令会报错，需要加-f选项来进行强制删除
 docker rm -vf db1 db2
+// 删除容器（数据容器）并删除它的数据盘
+docker rm -v dbcenter
 // 查看数据盘是否已经被删除
 docker volume ls
 ```
