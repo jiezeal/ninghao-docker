@@ -26,18 +26,13 @@ docker rm test1 test2
 
 ###指定主机目录作为数据盘
 ```
-docker run -v E:\practise\data:/mnt -i -t --name=db centos bash
+docker run -v /c/Users/zhuli/Desktop/practise:/mnt -i -t --name=db centos bash
 cd /mnt
 touch data1
 exit
 docker rm db
-切换到E:\practise\data目录下，存在data1这个文件
+切换到/c/Users/zhuli/Desktop/practise目录下，存在data1这个文件
 ```
-在创建容器的时候如果报如下错误：
-![](image/screenshot_1485665074831.png)
-
-解决方法：
-![](image/screenshot_1485665119744.png)
 
 ###数据容器
 我们可以去创建一个数据容器，然后让其它的容器可以去使用这个数据容器来作为它们的数据盘
