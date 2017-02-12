@@ -290,7 +290,9 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 RUN composer global require "laravel/installer"
 ```
 
-`docker-compose build console`
+```
+docker-compose build console
+```
 
 ![](image/screenshot_1485962575074.png)
 
