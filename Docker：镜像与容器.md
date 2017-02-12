@@ -53,9 +53,9 @@ docker-machine ssh default
 // 创建一个在后台运行的容器
 docker run --detach centos ping www.baidu.com
 // 新打开一个终端
-docker logs --follow e183ced42544
+docker logs --follow 869f4f342b0189665329a5ea3479af415dde21fc90da4211687bbefa178d8c3c
 // 切换到原来的终端
-docker stop e183ced42544
+docker stop 869f4f342b0189665329a5ea3479af415dde21fc90da4211687bbefa178d8c3c
 // 再切换到新打开的终端就会发现日志已经停止打印
 ```
 
@@ -72,13 +72,13 @@ node -e "console.log('hello')"
 // 下面我们可以基于这个容器创建一个镜像，其实就是去提交一下对这个容器的修改就行了
 // 先复制一个这个容器的主机名，因为它是这个容器的ID号，输入exit退出一下
 // 提交修改 -m 指定提交日志(中间不能有空格) -a 指定作者 
-commit -m '安装nodejs' -a 'zhulinjie' 79944f6655f7 zhulinjie/nodejs-demo:latest
+docker commit -m '安装nodejs' -a 'zhulinjie' 79944f6655f7 nodejs-demo:latest
 // 基于这个镜像去创建一个容器
-docker run zhulinjie/nodejs-demo node -e "console.log('hello')"
+docker run nodejs-demo node -e "console.log('hello')"
 // 删除手工创建的镜像，需要先删除基于这个镜像创建的容器
 docker ps -a -l
 docker rm 8cb93622ed06
-docker rmi zhulinjie/nodejs-demo
+docker rmi nodejs-demo
 ```
 
 ###Dockerfile创建镜像
