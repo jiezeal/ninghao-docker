@@ -160,7 +160,7 @@ services:
       - "fairyland"
     volumes:
       - nest:/mnt
-      - ./app/web/:/usr/share/nginx/html
+      - ./app/web:/usr/share/nginx/html
   dragon:
     image: nginx
     ports:
@@ -169,7 +169,7 @@ services:
       - "fairyland"
     volumes:
       - nest:/mnt
-      - ./app/web/:/usr/share/nginx/html
+      - ./app/web:/usr/share/nginx/html
   monkey:
     image: nginx
     ports:
