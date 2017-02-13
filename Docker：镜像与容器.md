@@ -46,6 +46,7 @@ docker logs greeting
 docker run --interactive --tty centos /bin/bash
 // 登录到default主机
 docker-machine ssh default
+// 
 ```
 
 ###在后台运行的容器
