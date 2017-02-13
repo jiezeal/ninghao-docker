@@ -46,7 +46,8 @@ docker logs greeting
 docker run --interactive --tty centos /bin/bash
 // 登录到default主机
 docker-machine ssh default
-// 
+// 创建服务需要的镜像并启动服务
+docker-compose up -d --build
 ```
 
 ###在后台运行的容器
