@@ -7,4 +7,4 @@ curl -L https://github.com/docker/compose/releases/download/1.7.1/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
 
-###  使用加速器下载镜像
+###使用加速器下载镜像
