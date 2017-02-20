@@ -11,4 +11,6 @@ chmod +x /usr/local/bin/docker-compose
 ```
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://c0b3b6a9.m.daocloud.io
 // 重启docker
+systemctl daemon-reload
+systemctl restart docker && systemctl enable docker
 ```
