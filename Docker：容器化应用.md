@@ -239,7 +239,7 @@ services:
     volumes_from:
       - php
     volumes:
-      - ./images/nginx/config:/etc/nginx/conf.d
+      - ./images/nginx/config:/etc/nginx/conf.d	
   php:
     build:
       context: ./images/php
