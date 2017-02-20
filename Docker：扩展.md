@@ -10,5 +10,5 @@ chmod +x /usr/local/bin/docker-compose
 ###使用加速器下载镜像（linux环境）
 ```
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://c0b3b6a9.m.daocloud.io
-
+// 重启docker
 ```
