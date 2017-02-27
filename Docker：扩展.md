@@ -15,3 +15,5 @@ systemctl daemon-reload
 systemctl restart docker && systemctl enable docker
 ```
 
+###搭建laradock开发环境
+https://github.com/nickfan/laradock
