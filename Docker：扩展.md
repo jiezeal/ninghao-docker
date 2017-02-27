@@ -16,7 +16,6 @@ systemctl restart docker && systemctl enable docker
 ```
 
 ###搭建laradock开发环境
-参考资料：
-[https://laravel-china.org/topics/3374](https://laravel-china.org/topics/3374)  
+参考资料：[https://laravel-china.org/topics/3374](https://laravel-china.org/topics/3374)  
 [https://github.com/nickfan/laradock](https://github.com/nickfan/laradock)
 
